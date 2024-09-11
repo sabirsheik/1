@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+/* Main container */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: url('https://www.openaccessgovernment.org/wp-content/uploads/2019/10/dreamstime_xxl_126050352.jpg') no-repeat center center fixed;
+
+  background-size: cover;
+
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.container-login {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  /* max-width: 400px; */
+  width: 50%;
+  height: 60%;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  backdrop-filter: blur(6px);
+}
+
+.bc {
+  color: #099de6;
+  font-size: 3rem;
+  font-weight: bolder;
+}
+
+/* Welcome message */
+.welcome-message {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+  color: yellow;
+}
+
+/* Login button */
+.login-button {
+  background-color: yellow;
+  color: #01143e;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 25px;
+  /* font-weight: bold; */
+  font-size: 1.2rem;
+  transition: all 0.7s ease;
+  cursor: pointer;
+}
+
+/* Button hover effect */
+.login-button:hover {
+  background-color: transparent;
+  box-shadow: inset 0 0 0 0.2rem gold;
+  color: gold;
+}
+
+/* Button active effect */
+.login-button:active {
+  background-color: darkorange;
+}
+/* Overall container */
+.connected-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url("https://img.freepik.com/premium-photo/bitcoin-colored-background-cryptocurrency-coins-technology_136615-1057.jpg?w=740");
+  /* Dark background for contrast */
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #e5e5e5;
+  /* Light text for contrast */
+}
+
+.connected-container {
+  backdrop-filter: blur(6px);
+  /* Binance dark background */
+  color: #e5e5e5;
+  /* Light text for contrast */
+  padding: 20px;
+  border-radius: 10px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Header */
+.connected-header {
+  color: #f0b90b;
+  /* Binance yellow/gold */
+  text-align: center;
+  font-size: 4em;
+  margin-bottom: 20px;
+}
+
+/* Metamask Account Information */
+.connected-account {
+  text-align: center;
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.connected-account span {
+  color: #f0b90b;
+  font-weight: bold;
+}
+
+/* Already voted message */
+.already-voted {
+  color: #f05454;
+  /* Red color to indicate action status */
+  font-size: 1.1em;
+  text-align: center;
+}
+
+/* Voting Section */
+.voting-section {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.connected-vote {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+/* voting input */
+input[type=number] {
+  padding: 10px 30px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+/* Input field for candidate index */
+.candidate-input {
+  padding: 10px;
+  border: 1px solid #f0b90b;
+  border-radius: 5px;
+  width: 80%;
+  background-color: #1f2833;
+  /* Slightly lighter dark */
+  color: #e5e5e5;
+  margin-bottom: 10px;
+  font-size: 1em;
+}
+
+/* Vote button */
+.vote-button {
+  background-color: #f0b90b;
+  border: none;
+  color: #0b0c10;
+  padding: 10px 20px;
+  font-size: 1em;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.vote-button:hover {
+  background-color: #d89d08;
+  /* Darker yellow on hover */
+}
+
+/* Table of candidates */
+.candidates-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.candidates-table th,
+.candidates-table td {
+  padding: 12px;
+  border: 1px solid #f0b90b;
+  text-align: left;
+  color: #e5e5e5;
+  font-size: 1em;
+}
+
+.candidates-table th {
+  background-color: #1f2833;
+  /* Darker header background */
+  color: #f0b90b;
+  /* Yellow header text */
+}
+
+.candidates-table tr:nth-child(even) {
+  background-color: #141719;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .connected-container {
+    padding: 15px;
+  }
+
+  .vote-button {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .candidate-input {
+    width: 100%;
+  }
+}
